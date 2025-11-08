@@ -1,0 +1,16 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Case study placeholder 02</title>
+  <desc id="desc">Placeholder artwork for the second case study tile.</desc>
+  <defs>
+    <linearGradient id="caseGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12243A" />
+      <stop offset="50%" stop-color="#4BD2FF" />
+      <stop offset="100%" stop-color="#73FFDD" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#caseGradient2)" rx="48" />
+  <g fill="#ffffff" fill-opacity="0.8" font-family="Space Grotesk, Arial, sans-serif" text-anchor="middle">
+    <text x="50%" y="45%" font-size="56" letter-spacing="6">Project Two</text>
+    <text x="50%" y="55%" font-size="32" letter-spacing="4">Climate analytics platform</text>
+  </g>
+</svg>

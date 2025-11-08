@@ -1,0 +1,17 @@
+<svg width="820" height="1024" viewBox="0 0 820 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">About portrait placeholder</title>
+  <desc id="desc">Placeholder artwork for the about portrait image.</desc>
+  <defs>
+    <linearGradient id="portraitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4BD2FF" />
+      <stop offset="50%" stop-color="#8F6CFF" />
+      <stop offset="100%" stop-color="#20193D" />
+    </linearGradient>
+  </defs>
+  <rect width="820" height="1024" fill="url(#portraitGradient)" rx="56" />
+  <g fill="#ffffff" fill-opacity="0.82" font-family="Space Grotesk, Arial, sans-serif" text-anchor="middle">
+    <text x="50%" y="46%" font-size="60" letter-spacing="6">Your</text>
+    <text x="50%" y="56%" font-size="46" letter-spacing="4">Portrait</text>
+    <text x="50%" y="66%" font-size="24" fill-opacity="0.6" letter-spacing="2">Recommended ratio · 4:5</text>
+  </g>
+</svg>
