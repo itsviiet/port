@@ -1,0 +1,504 @@
+{
+  "designSystem": {
+    "name": "Pearl Creative Portfolio",
+    "version": "1.0",
+    "description": "A minimalist, elegant design system for creative portfolios with emphasis on typography, generous whitespace, and subtle interactions",
+    
+    "designPhilosophy": {
+      "approach": "Minimalist and refined",
+      "principles": [
+        "Generous whitespace for breathing room",
+        "Typography-first hierarchy",
+        "Subtle, sophisticated interactions",
+        "Content over decoration",
+        "Professional yet approachable"
+      ],
+      "aesthetic": "Contemporary minimalism with editorial influence"
+    },
+
+    "colorPalette": {
+      "primary": {
+        "background": "#FFFFFF",
+        "foreground": "#000000",
+        "description": "High contrast monochromatic base"
+      },
+      "neutral": {
+        "50": "#FAFAFA",
+        "100": "#F5F5F5",
+        "200": "#E5E5E5",
+        "300": "#D4D4D4",
+        "400": "#A3A3A3",
+        "500": "#737373",
+        "600": "#525252",
+        "700": "#404040",
+        "800": "#262626",
+        "900": "#171717"
+      },
+      "accent": {
+        "primary": "#000000",
+        "secondary": "#404040",
+        "tertiary": "#737373",
+        "description": "Grayscale accents for subtle emphasis"
+      },
+      "usage": {
+        "text": {
+          "primary": "#000000",
+          "secondary": "#525252",
+          "tertiary": "#737373",
+          "muted": "#A3A3A3"
+        },
+        "borders": "#E5E5E5",
+        "dividers": "#F5F5F5",
+        "overlays": "rgba(0, 0, 0, 0.5)"
+      }
+    },
+
+    "typography": {
+      "fontFamilies": {
+        "primary": {
+          "name": "Inter",
+          "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif",
+          "usage": "Headlines, body text, UI elements"
+        },
+        "display": {
+          "name": "Space Grotesk",
+          "fallback": "'Inter', -apple-system, sans-serif",
+          "usage": "Large display text, hero sections",
+          "characteristics": "Geometric, modern, slightly condensed"
+        }
+      },
+      "typeScale": {
+        "xs": {
+          "fontSize": "0.75rem",
+          "lineHeight": "1rem",
+          "usage": "Captions, small labels"
+        },
+        "sm": {
+          "fontSize": "0.875rem",
+          "lineHeight": "1.25rem",
+          "usage": "Secondary text, metadata"
+        },
+        "base": {
+          "fontSize": "1rem",
+          "lineHeight": "1.5rem",
+          "usage": "Body text, default"
+        },
+        "lg": {
+          "fontSize": "1.125rem",
+          "lineHeight": "1.75rem",
+          "usage": "Large body text, subheadings"
+        },
+        "xl": {
+          "fontSize": "1.25rem",
+          "lineHeight": "1.75rem",
+          "usage": "Small headlines"
+        },
+        "2xl": {
+          "fontSize": "1.5rem",
+          "lineHeight": "2rem",
+          "usage": "Section headlines"
+        },
+        "3xl": {
+          "fontSize": "1.875rem",
+          "lineHeight": "2.25rem",
+          "usage": "Page titles"
+        },
+        "4xl": {
+          "fontSize": "2.25rem",
+          "lineHeight": "2.5rem",
+          "usage": "Hero headlines"
+        },
+        "5xl": {
+          "fontSize": "3rem",
+          "lineHeight": "1.1",
+          "usage": "Display headlines"
+        },
+        "6xl": {
+          "fontSize": "3.75rem",
+          "lineHeight": "1",
+          "usage": "Large display text"
+        },
+        "7xl": {
+          "fontSize": "4.5rem",
+          "lineHeight": "1",
+          "usage": "Extra large display"
+        }
+      },
+      "fontWeights": {
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      },
+      "letterSpacing": {
+        "tight": "-0.025em",
+        "normal": "0",
+        "wide": "0.025em",
+        "wider": "0.05em",
+        "widest": "0.1em"
+      }
+    },
+
+    "spacing": {
+      "scale": "8px base unit",
+      "values": {
+        "0": "0px",
+        "1": "0.25rem",
+        "2": "0.5rem",
+        "3": "0.75rem",
+        "4": "1rem",
+        "5": "1.25rem",
+        "6": "1.5rem",
+        "8": "2rem",
+        "10": "2.5rem",
+        "12": "3rem",
+        "16": "4rem",
+        "20": "5rem",
+        "24": "6rem",
+        "32": "8rem",
+        "40": "10rem",
+        "48": "12rem",
+        "64": "16rem"
+      },
+      "sectionSpacing": {
+        "small": "4rem",
+        "medium": "6rem",
+        "large": "8rem",
+        "xlarge": "12rem"
+      },
+      "contentSpacing": {
+        "compact": "1rem",
+        "comfortable": "2rem",
+        "spacious": "4rem"
+      }
+    },
+
+    "layout": {
+      "containers": {
+        "maxWidth": {
+          "sm": "640px",
+          "md": "768px",
+          "lg": "1024px",
+          "xl": "1280px",
+          "2xl": "1536px",
+          "content": "1200px"
+        },
+        "padding": {
+          "mobile": "1.5rem",
+          "tablet": "2rem",
+          "desktop": "3rem"
+        }
+      },
+      "grid": {
+        "columns": {
+          "mobile": 4,
+          "tablet": 8,
+          "desktop": 12
+        },
+        "gutter": {
+          "mobile": "1rem",
+          "tablet": "1.5rem",
+          "desktop": "2rem"
+        }
+      },
+      "breakpoints": {
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
+        "2xl": "1536px"
+      }
+    },
+
+    "components": {
+      "navigation": {
+        "style": "Minimal top navigation",
+        "position": "Fixed top",
+        "height": "80px",
+        "background": "White with subtle shadow on scroll",
+        "layout": "Logo left, menu items right",
+        "characteristics": [
+          "Transparent initially, solid white on scroll",
+          "Subtle backdrop blur effect",
+          "Minimal border or shadow",
+          "Clean, unobtrusive presence"
+        ]
+      },
+      "hero": {
+        "layout": "Centered content with generous vertical spacing",
+        "characteristics": [
+          "Large display typography (5xl-7xl)",
+          "Secondary tagline in smaller size with muted color",
+          "Ample whitespace above and below",
+          "Optional subtle background gradient or image"
+        ],
+        "content": {
+          "headline": {
+            "fontSize": "5xl-7xl",
+            "fontWeight": "medium-semibold",
+            "lineHeight": "tight",
+            "letterSpacing": "tight"
+          },
+          "tagline": {
+            "fontSize": "lg-xl",
+            "color": "muted",
+            "spacing": "2rem above headline"
+          }
+        }
+      },
+      "cards": {
+        "style": "Minimal with hover interactions",
+        "variants": [
+          {
+            "name": "project-card",
+            "structure": {
+              "image": "Full width, 16:9 or 3:2 aspect ratio",
+              "content": "Bottom aligned or overlay",
+              "padding": "1.5-2rem",
+              "background": "White or transparent"
+            },
+            "hover": {
+              "transition": "smooth scale or opacity",
+              "duration": "300-400ms",
+              "effect": "Slight lift or image zoom"
+            }
+          },
+          {
+            "name": "service-card",
+            "structure": {
+              "icon": "Optional, top aligned",
+              "title": "Bold, prominent",
+              "description": "Muted color, comfortable spacing",
+              "padding": "2-3rem",
+              "border": "Subtle or none"
+            }
+          }
+        ],
+        "spacing": {
+          "betweenCards": "2-3rem",
+          "internal": "1.5rem"
+        }
+      },
+      "buttons": {
+        "variants": [
+          {
+            "name": "primary",
+            "background": "#000000",
+            "color": "#FFFFFF",
+            "padding": "0.75rem 2rem",
+            "borderRadius": "0.5rem",
+            "fontSize": "base",
+            "fontWeight": "medium",
+            "hover": {
+              "background": "#262626",
+              "transform": "translateY(-2px)",
+              "transition": "all 200ms ease"
+            }
+          },
+          {
+            "name": "secondary",
+            "background": "transparent",
+            "color": "#000000",
+            "border": "1px solid #E5E5E5",
+            "padding": "0.75rem 2rem",
+            "borderRadius": "0.5rem",
+            "hover": {
+              "background": "#FAFAFA",
+              "borderColor": "#D4D4D4"
+            }
+          },
+          {
+            "name": "text",
+            "background": "transparent",
+            "color": "#000000",
+            "padding": "0.5rem 1rem",
+            "hover": {
+              "color": "#525252",
+              "textDecoration": "underline"
+            }
+          }
+        ]
+      },
+      "forms": {
+        "inputs": {
+          "height": "3rem",
+          "padding": "0 1rem",
+          "border": "1px solid #E5E5E5",
+          "borderRadius": "0.5rem",
+          "fontSize": "base",
+          "focus": {
+            "borderColor": "#000000",
+            "outline": "2px solid transparent",
+            "outlineOffset": "2px"
+          }
+        },
+        "textareas": {
+          "padding": "1rem",
+          "minHeight": "8rem",
+          "border": "1px solid #E5E5E5",
+          "borderRadius": "0.5rem"
+        }
+      },
+      "images": {
+        "borderRadius": "0.5rem-1rem",
+        "aspectRatios": {
+          "square": "1:1",
+          "landscape": "16:9",
+          "portrait": "3:4",
+          "wide": "21:9"
+        },
+        "objectFit": "cover",
+        "loading": "lazy"
+      }
+    },
+
+    "interactions": {
+      "transitions": {
+        "default": {
+          "duration": "300ms",
+          "timing": "cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "fast": {
+          "duration": "150ms",
+          "timing": "cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "slow": {
+          "duration": "500ms",
+          "timing": "cubic-bezier(0.4, 0, 0.2, 1)"
+        }
+      },
+      "hover": {
+        "scale": 1.02,
+        "opacity": 0.9,
+        "translateY": "-4px"
+      },
+      "animations": {
+        "fadeIn": {
+          "from": { "opacity": 0, "transform": "translateY(20px)" },
+          "to": { "opacity": 1, "transform": "translateY(0)" },
+          "duration": "600ms"
+        },
+        "slideIn": {
+          "from": { "transform": "translateX(-100%)" },
+          "to": { "transform": "translateX(0)" },
+          "duration": "400ms"
+        }
+      }
+    },
+
+    "contentStructure": {
+      "homepage": {
+        "sections": [
+          {
+            "name": "Hero",
+            "content": ["Brand tagline", "Main headline", "Subheadline", "CTA button"],
+            "spacing": "xlarge"
+          },
+          {
+            "name": "Featured Work",
+            "layout": "Grid 2-3 columns",
+            "content": ["Project cards with images", "Project titles", "Brief descriptions"],
+            "spacing": "large"
+          },
+          {
+            "name": "Services",
+            "layout": "Grid or list",
+            "content": ["Service cards", "Icons (optional)", "Descriptions"],
+            "spacing": "large"
+          },
+          {
+            "name": "About/Story",
+            "layout": "Two column or centered",
+            "content": ["Narrative text", "Supporting image (optional)", "Team info"],
+            "spacing": "medium"
+          },
+          {
+            "name": "Contact/CTA",
+            "layout": "Centered",
+            "content": ["Headline", "Form or contact info", "Social links"],
+            "spacing": "medium"
+          }
+        ]
+      }
+    },
+
+    "designPatterns": {
+      "whitespace": {
+        "principle": "Generous and intentional",
+        "application": [
+          "Large vertical spacing between sections (6-12rem)",
+          "Comfortable padding around content blocks (2-4rem)",
+          "Breathing room around text elements (1-2rem)",
+          "Avoid cramming content"
+        ]
+      },
+      "hierarchy": {
+        "principle": "Typography-driven with clear levels",
+        "implementation": [
+          "Size contrast between headlines and body (3-4x difference)",
+          "Weight variation for emphasis (regular to semibold)",
+          "Color to denote secondary information (muted grays)",
+          "Spacing to create visual groups"
+        ]
+      },
+      "imagery": {
+        "style": "High-quality, professional",
+        "treatment": [
+          "Subtle rounded corners (8-16px)",
+          "Consistent aspect ratios within sections",
+          "Generous margins around images",
+          "Optional subtle shadow or border"
+        ]
+      },
+      "navigation": {
+        "style": "Simple and unobtrusive",
+        "behavior": [
+          "Sticky header on scroll",
+          "Smooth scroll to sections",
+          "Mobile hamburger menu",
+          "Minimal animation on interactions"
+        ]
+      }
+    },
+
+    "implementationGuidelines": {
+      "responsive": {
+        "approach": "Mobile-first",
+        "considerations": [
+          "Stack columns on mobile",
+          "Reduce text sizes proportionally",
+          "Adjust spacing for smaller screens",
+          "Simplify navigation on mobile",
+          "Optimize images for different viewports"
+        ]
+      },
+      "performance": {
+        "priorities": [
+          "Lazy load images",
+          "Optimize image formats (WebP, AVIF)",
+          "Minimize animation complexity",
+          "Use CSS transforms for animations",
+          "Defer non-critical resources"
+        ]
+      },
+      "accessibility": {
+        "requirements": [
+          "Maintain 4.5:1 contrast ratio for text",
+          "Provide focus indicators for keyboard navigation",
+          "Use semantic HTML elements",
+          "Include alt text for images",
+          "Ensure touch targets are at least 44x44px"
+        ]
+      }
+    },
+
+    "aiReplicationPrompts": {
+      "style": "Create a minimalist, editorial-style portfolio website with generous whitespace, strong typography hierarchy, and subtle interactions. Use a monochromatic color scheme with black text on white background. Emphasize content over decoration.",
+      "typography": "Use Inter or Space Grotesk for a modern, geometric aesthetic. Create clear hierarchy with size (display text at 4xl-7xl, body at base-lg) and weight (medium to semibold for headlines). Maintain comfortable line heights (1.5 for body, 1.1 for headlines).",
+      "layout": "Design with generous vertical spacing (6-12rem between sections). Use a centered content layout with max-width of 1200px. Implement a 12-column grid system with 2rem gutters on desktop.",
+      "components": "Create minimal cards with subtle hover effects (slight scale or lift). Design a clean navigation bar that becomes solid white on scroll. Use rounded corners (0.5-1rem) consistently across buttons and images.",
+      "interactions": "Implement smooth transitions (300ms cubic-bezier). Add subtle hover effects (2-4px translateY, 0.9 opacity, or 1.02 scale). Use fade-in animations for content as it enters viewport."
+    }
+  }
+}
