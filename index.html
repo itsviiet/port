@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pearl Creative Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website for a UX designer showcasing selected work, services, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-observe>
+      <div class="container">
+        <a class="brand" href="#home" aria-label="Pearl Creative home">Pearl</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav id="site-navigation" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <p class="eyebrow" data-observe aria-label="Professional focus">
+            Product designer &amp; systems thinker
+          </p>
+          <h1 class="hero__headline" data-observe>
+            Designing experiences that feel inevitable.
+          </h1>
+          <p class="hero__subheadline" data-observe>
+            I help mission-led teams transform complex problems into intuitive
+            digital products—balancing user empathy with measurable outcomes.
+          </p>
+          <div class="hero__actions" data-observe>
+            <a class="btn btn--primary" href="#work">View portfolio</a>
+            <a class="btn btn--secondary" href="#contact">Book a call</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured-work" id="work">
+        <div class="container">
+          <div class="section__header">
+            <p class="eyebrow" data-observe>Selected work</p>
+            <h2 data-observe>Crafting products that elevate people’s choices</h2>
+            <p class="section__intro" data-observe>
+              Each engagement integrates research, strategy, and design fidelity,
+              delivering outcomes that align business value with customer
+              delight.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card" data-observe>
+              <figure class="project-card__media">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'%3E%3Crect width='100%25' height='100%25' fill='%23F5F5F5'/%3E%3Ctext x='50%25' y='50%25' fill='%23737373' font-family='Inter, sans-serif' font-size='48' text-anchor='middle'%3EProject Image%3C/text%3E%3C/svg%3E"
+                  alt="Preview of the Pathways Health redesign project"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-card__content">
+                <div class="project-card__meta">
+                  <span>Health Tech</span>
+                  <span>2024</span>
+                </div>
+                <h3>Pathways Care Platform</h3>
+                <p>
+                  Reimagined the patient onboarding journey for a hybrid care
+                  platform. Reduced activation drop-off by 37% through service
+                  blueprinting and rapid prototyping.
+                </p>
+                <a class="project-card__link" href="#" aria-label="View Pathways Care Platform case study"
+                  >View case study</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card" data-observe>
+              <figure class="project-card__media">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'%3E%3Crect width='100%25' height='100%25' fill='%23F5F5F5'/%3E%3Ctext x='50%25' y='50%25' fill='%23737373' font-family='Inter, sans-serif' font-size='48' text-anchor='middle'%3EProject Image%3C/text%3E%3C/svg%3E"
+                  alt="Preview of the Atlas Operations system project"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-card__content">
+                <div class="project-card__meta">
+                  <span>Enterprise SaaS</span>
+                  <span>2023</span>
+                </div>
+                <h3>Atlas Operations System</h3>
+                <p>
+                  Built a unified control center for a logistics network,
+                  aligning 7 internal tools under a single design language and
+                  establishing governance for future growth.
+                </p>
+                <a class="project-card__link" href="#" aria-label="View Atlas Operations System case study"
+                  >View case study</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card" data-observe>
+              <figure class="project-card__media">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'%3E%3Crect width='100%25' height='100%25' fill='%23F5F5F5'/%3E%3Ctext x='50%25' y='50%25' fill='%23737373' font-family='Inter, sans-serif' font-size='48' text-anchor='middle'%3EProject Image%3C/text%3E%3C/svg%3E"
+                  alt="Preview of the Meadow banking experience project"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="project-card__content">
+                <div class="project-card__meta">
+                  <span>Fintech</span>
+                  <span>2022</span>
+                </div>
+                <h3>Meadow Banking Experience</h3>
+                <p>
+                  Led end-to-end redesign of a digital banking app, introducing
+                  financial guidance flows that increased monthly active users by
+                  24% in the first quarter.
+                </p>
+                <a class="project-card__link" href="#" aria-label="View Meadow Banking Experience case study"
+                  >View case study</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section__header">
+            <p class="eyebrow" data-observe>Ways I help teams</p>
+            <h2 data-observe>Strategic design engagements, end-to-end</h2>
+            <p class="section__intro" data-observe>
+              From discovery to launch, engagements are structured to deliver
+              clarity, alignment, and measurable impact. Each collaboration is
+              tailored to the organization’s stage and ambition.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card" data-observe>
+              <h3>Product Discovery Sprints</h3>
+              <p>
+                Align stakeholders, prioritize outcomes, and validate direction
+                through rapid research, journey mapping, and opportunity sizing.
+              </p>
+              <ul>
+                <li>Foundational research</li>
+                <li>Service blueprinting</li>
+                <li>Product vision storytelling</li>
+              </ul>
+            </article>
+
+            <article class="service-card" data-observe>
+              <h3>Experience Design Systems</h3>
+              <p>
+                Scale design with reusable components, governance models, and
+                accessible documentation tailored to your product ecosystem.
+              </p>
+              <ul>
+                <li>Multi-platform design systems</li>
+                <li>Design ops enablement</li>
+                <li>Accessibility audits</li>
+              </ul>
+            </article>
+
+            <article class="service-card" data-observe>
+              <h3>Product Iteration Partnerships</h3>
+              <p>
+                Embed with product teams to ship iterative improvements backed by
+                experimentation and insight-driven roadmaps.
+              </p>
+              <ul>
+                <li>Experiment design &amp; analysis</li>
+                <li>Workflow optimization</li>
+                <li>KPI-driven refinement</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about__layout">
+          <figure class="about__media" data-observe>
+            <img
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='1125'%3E%3Crect width='100%25' height='100%25' rx='24' ry='24' fill='%23F5F5F5'/%3E%3Ctext x='50%25' y='50%25' fill='%23737373' font-family='Inter, sans-serif' font-size='48' text-anchor='middle'%3EPortrait%3C/text%3E%3C/svg%3E"
+              alt="Portrait of the designer"
+              loading="lazy"
+            />
+          </figure>
+          <div class="about__content">
+            <p class="eyebrow" data-observe>About</p>
+            <h2 data-observe>Designing with care, systems, and curiosity</h2>
+            <p data-observe>
+              I’m a UX practitioner with a decade across healthcare, fintech, and
+              SaaS. My practice blends qualitative research, systems thinking,
+              and interaction craft to help teams move confidently from vision to
+              shipped experiences.
+            </p>
+            <p data-observe>
+              I believe that the best products acknowledge context and nuance.
+              Outside of work, you can find me mentoring emerging designers,
+              writing about product craft, or exploring how service design can
+              drive equitable outcomes.
+            </p>
+            <div class="about__details" data-observe>
+              <div>
+                <span class="label">Based in</span>
+                <span>Portland, OR</span>
+              </div>
+              <div>
+                <span class="label">Collaborating with</span>
+                <span>Mission-driven teams globally</span>
+              </div>
+              <div>
+                <span class="label">Currently</span>
+                <span>Advising early-stage health tech founders</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact__grid">
+          <div class="contact__intro">
+            <p class="eyebrow" data-observe>Let’s collaborate</p>
+            <h2 data-observe>Have an initiative in mind?</h2>
+            <p data-observe>
+              Share a few details about your team and goals. I’ll respond within
+              two business days with next steps and a time to connect.
+            </p>
+            <div class="contact__details" data-observe>
+              <a href="mailto:hello@pearl.studio" class="contact__link"
+                >hello@pearl.studio</a
+              >
+              <div class="contact__social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Medium">Medium</a>
+                <a href="#" aria-label="Dribbble">Dribbble</a>
+              </div>
+            </div>
+          </div>
+          <form class="contact__form" data-observe>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-field">
+              <label for="company">Company</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                autocomplete="organization"
+              />
+            </div>
+            <div class="form-field">
+              <label for="message">How can I help?</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Submit</button>
+            <p class="form-footnote">
+              I respect your privacy and only use this information to respond to
+              your inquiry.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="current-year"></span> Pearl Creative Studio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./scripts.js" defer></script>
+  </body>
+</html>
