@@ -1,0 +1,17 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Hero placeholder image</title>
+  <desc id="desc">Placeholder artwork indicating where to replace with a hero portrait or scene.</desc>
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8F6CFF" />
+      <stop offset="50%" stop-color="#4BD2FF" />
+      <stop offset="100%" stop-color="#102033" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1200" fill="url(#heroGradient)" rx="64" />
+  <g fill="#ffffff" fill-opacity="0.7" font-family="Space Grotesk, Arial, sans-serif" text-anchor="middle">
+    <text x="50%" y="45%" font-size="72" letter-spacing="6">Replace</text>
+    <text x="50%" y="55%" font-size="48" letter-spacing="4">Hero Image</text>
+    <text x="50%" y="65%" font-size="24" fill-opacity="0.55" letter-spacing="2">Recommended ratio · 4:5</text>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Case study placeholder 03</title>
+  <desc id="desc">Placeholder image for the AI assistant case study.</desc>
+  <defs>
+    <linearGradient id="caseGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1635" />
+      <stop offset="50%" stop-color="#8F6CFF" />
+      <stop offset="100%" stop-color="#FF6CDA" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#caseGradient3)" rx="48" />
+  <g fill="#ffffff" fill-opacity="0.8" font-family="Space Grotesk, Arial, sans-serif" text-anchor="middle">
+    <text x="50%" y="45%" font-size="56" letter-spacing="6">Project Three</text>
+    <text x="50%" y="55%" font-size="32" letter-spacing="4">AI assistant experience</text>
+  </g>
+</svg>
