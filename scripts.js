@@ -11,18 +11,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const setNavState = (isOpen) => {
     if (!nav || !navToggle) return;
-    navToggle.setAttribute("aria-expanded", String(isOpen));
     nav.classList.toggle("is-open", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
     document.body.classList.toggle("no-scroll", isOpen);
   };
 
-  if (navToggle && nav) {
+  if (nav && navToggle) {
     navToggle.addEventListener("click", () => {
-      const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
-      setNavState(!isExpanded);
+      const currentlyExpanded = navToggle.getAttribute("aria-expanded") === "true";
+      setNavState(!currentlyExpanded);
     });
 
-    nav.querySelectorAll("a").forEach((link) => {
+    nav.querySelectorAll("a[href^='#']").forEach((link) => {
       link.addEventListener("click", () => setNavState(false));
     });
 
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const handleScroll = () => {
     const offset = window.scrollY || document.documentElement.scrollTop;
     if (header) {
-      header.classList.toggle("is-condensed", offset > 32);
+      header.classList.toggle("is-condensed", offset > 16);
     }
     if (backToTop) {
       backToTop.classList.toggle("is-visible", offset > 480);
@@ -55,13 +55,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll("a[href^='#']").forEach((anchor) => {
     anchor.addEventListener("click", (event) => {
-      const targetId = anchor.getAttribute("href");
-      if (!targetId || targetId.length < 2) return;
-      const target = document.querySelector(targetId);
+      const hash = anchor.getAttribute("href");
+      if (!hash || hash.length < 2) return;
+      const target = document.querySelector(hash);
       if (!target) return;
 
       event.preventDefault();
-      const top = target.getBoundingClientRect().top + window.scrollY - 72;
+      const headerOffset = header ? Math.min(header.offsetHeight + 12, 120) : 0;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
       window.scrollTo({
         top,
         behavior: prefersReducedMotion() ? "auto" : "smooth",
@@ -69,23 +70,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const revealEls = document.querySelectorAll("[data-reveal]");
-  if (revealEls.length && !prefersReducedMotion()) {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            obs.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.18, rootMargin: "0px 0px -80px 0px" }
-    );
+  const revealTargets = document.querySelectorAll("[data-reveal]");
+  if (revealTargets.length) {
+    if (prefersReducedMotion()) {
+      revealTargets.forEach((element) => element.classList.add("is-visible"));
+    } else {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              obs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2, rootMargin: "0px 0px -80px 0px" }
+      );
 
-    revealEls.forEach((el) => observer.observe(el));
-  } else {
-    revealEls.forEach((el) => el.classList.add("is-visible"));
+      revealTargets.forEach((element) => observer.observe(element));
+    }
   }
 });
 
