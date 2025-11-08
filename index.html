@@ -1,33 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pearl — Product Designer Portfolio</title>
+    <title>Pearl — Creative Portfolio Template</title>
     <meta
       name="description"
-      content="Pearl is a product designer crafting ethical, inclusive experiences across products and services."
+      content="Pearl is a minimalist portfolio designed to showcase premium creative work with clarity and confidence."
     />
-    <link rel="preload" href="https://fonts.gstatic.com" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="scripts.js"></script>
   </head>
   <body>
-    <div class="page">
-      <header class="site-header" data-component="header">
+    <div class="page" id="top">
+      <header class="site-header" data-component="navigation">
         <div class="container">
-          <a href="#top" class="logo" aria-label="Pearl home">
-            <span class="logo-mark" aria-hidden="true"></span>
-            <span class="logo-text">Pearl</span>
+          <a href="#top" class="brand" aria-label="Pearl homepage">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">Pearl</span>
           </a>
-          <nav class="site-nav" data-component="nav">
+          <nav class="site-nav" aria-label="Primary" data-component="nav">
             <ul>
+              <li><a href="#home">Home</a></li>
               <li><a href="#work">Work</a></li>
-              <li><a href="#approach">Approach</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#contact" class="cta-link">Let’s talk</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#story">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
+            <a
+              class="button button--ghost nav-cta"
+              href="https://framer.com/projects/new?duplicate=Z7D4Y2ypAczRKN1T3YSt&via=dpietrasiak"
+              target="_blank"
+              rel="noopener"
+            >
+              Get for free
+            </a>
           </nav>
           <button
             class="nav-toggle"
@@ -38,345 +51,234 @@
           >
             <span></span>
             <span></span>
+            <span></span>
           </button>
         </div>
       </header>
 
-      <main id="top">
-        <section class="hero" id="home" data-component="hero">
-          <div class="container">
-            <div class="hero-copy" data-reveal>
-              <p class="eyebrow">Product Designer & Researcher</p>
+      <main>
+        <section class="hero" id="home">
+          <div class="container hero__inner">
+            <div class="hero__content" data-reveal>
+              <p class="eyebrow">Branding · Product Design</p>
               <h1>
-                Designing products and services that put accessibility first and
-                deliver measurable value.
+                Discover the essence of Pearl, a free Framer template. Let’s
+                shape your brand into a masterpiece together.
               </h1>
-              <p class="lede">
-                Pearl partners with visionary teams to translate complex
-                problems into inclusive solutions—spanning strategy, UX, visual
-                systems, and service design.
-              </p>
-              <div class="hero-actions">
-                <a class="button primary" href="#work">View projects</a>
-                <a class="button ghost" href="#contact">Book a call</a>
+              <div class="hero__actions">
+                <a class="button button--primary" href="#contact">Let’s talk</a>
+                <a
+                  class="button button--link"
+                  href="https://framer.com/projects/new?duplicate=Z7D4Y2ypAczRKN1T3YSt&via=dpietrasiak"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Get for free
+                  <span aria-hidden="true">→</span>
+                </a>
               </div>
             </div>
-              <figure class="hero-figure" data-reveal>
-              <img
-                src="assets/hero-placeholder.svg"
-                alt="Pearl collaborating with product team"
-              />
-              <figcaption>
-                Replace with your own hero image. Recommended ratio 4:5.
-              </figcaption>
-            </figure>
-          </div>
-          <div class="hero-orb hero-orb--primary" aria-hidden="true"></div>
-          <div class="hero-orb hero-orb--secondary" aria-hidden="true"></div>
-        </section>
-
-        <section class="metrics" data-component="metrics">
-          <div class="container">
-            <ul>
-              <li data-reveal>
-                <span class="value">9+</span>
-                <span class="label">Years of experience</span>
-              </li>
-              <li data-reveal>
-                <span class="value">42%</span>
-                <span class="label">Average conversion uplift</span>
-              </li>
-              <li data-reveal>
-                <span class="value">A11y</span>
-                <span class="label">WCAG 2.2 compliant</span>
-              </li>
-              <li data-reveal>
-                <span class="value">Global</span>
-                <span class="label">Products shipped internationally</span>
-              </li>
-            </ul>
+            <div class="hero__media" data-reveal>
+              <figure class="hero__figure">
+                <img
+                  src="assets/hero-placeholder.svg"
+                  alt="Preview of the Pearl design system in action"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="hero__note">
+                <p class="hero__note-eyebrow">Crafted for clarity</p>
+                <p class="hero__note-body">
+                  Modular layouts, intentional typography, and elevated
+                  storytelling—all built on the Pearl design system.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section class="case-studies" id="work" data-component="case-studies">
+        <section class="work" id="work">
           <div class="container">
             <div class="section-heading" data-reveal>
-              <p class="eyebrow">Selected work</p>
-              <h2>Featured case studies</h2>
-              <p class="lede">
-                A spectrum of collaborations with startups and Fortune 100
-                teams—spanning fintech, climate, and AI.
+              <p class="eyebrow">Our Work</p>
+              <h2>Designing Success</h2>
+              <p class="section-heading__description">
+                See how we’ve turned ideas into reality. Dive into the stories
+                of successful product designs that make a difference.
               </p>
             </div>
+            <div class="project-grid">
+              <article class="project-card" data-reveal>
+                <a href="#" class="project-card__link" aria-label="Booking Corp — Fintech Dello Banking App case study">
+                  <figure class="project-card__media">
+                    <img
+                      src="assets/case-01.svg"
+                      alt="Fintech Dello Banking App dashboard"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="project-card__content">
+                    <p class="project-card__client">Booking Corp.</p>
+                    <h3 class="project-card__title">
+                      Fintech Dello Banking App
+                    </h3>
+                  </div>
+                </a>
+              </article>
 
-            <article class="case-card" data-reveal>
-              <figure>
-                <img
-                  src="assets/case-01.svg"
-                  alt="Screenshot of inclusive banking onboarding experience"
-                />
-              </figure>
-              <div class="card-body">
-                <p class="card-eyebrow">Fintech</p>
-                <h3>Accessible banking for neurodiverse customers</h3>
-                <p>
-                  Led a cross-functional squad to redesign onboarding, reducing
-                  drop-off by 32% while exceeding WCAG AAA standards.
-                </p>
-                <ul class="chip-list">
-                  <li>Product strategy</li>
-                  <li>Research</li>
-                  <li>Design systems</li>
-                </ul>
-                <a class="text-link" href="#" data-intent="open-case-study"
-                  >View case study</a
-                >
-              </div>
-            </article>
+              <article class="project-card" data-reveal>
+                <a href="#" class="project-card__link" aria-label="Dazzle Inc. — Dazzle © Branding case study">
+                  <figure class="project-card__media">
+                    <img
+                      src="assets/case-02.svg"
+                      alt="Dazzle branding system preview"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="project-card__content">
+                    <p class="project-card__client">Dazzle Inc.</p>
+                    <h3 class="project-card__title">Dazzle © Branding</h3>
+                  </div>
+                </a>
+              </article>
 
-            <article class="case-card" data-reveal>
-              <figure>
-                <img
-                  src="assets/case-02.svg"
-                  alt="Climate analytics dashboard UI"
-                />
-              </figure>
-              <div class="card-body">
-                <p class="card-eyebrow">Climate</p>
-                <h3>Net-zero insights for enterprise teams</h3>
-                <p>
-                  Crafted a modular data platform helping sustainability
-                  leaders track emissions and forecast scenarios with clarity.
-                </p>
-                <ul class="chip-list">
-                  <li>Experience design</li>
-                  <li>Service mapping</li>
-                  <li>Prototyping</li>
-                </ul>
-                <a class="text-link" href="#" data-intent="open-case-study"
-                  >View case study</a
-                >
-              </div>
-            </article>
+              <article class="project-card" data-reveal>
+                <a href="#" class="project-card__link" aria-label="CareSunset — Healthcare Mobile App case study">
+                  <figure class="project-card__media">
+                    <img
+                      src="assets/case-03.svg"
+                      alt="CareSunset patient mobile experience"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="project-card__content">
+                    <p class="project-card__client">CareSunset</p>
+                    <h3 class="project-card__title">Healthcare Mobile App</h3>
+                  </div>
+                </a>
+              </article>
 
-            <article class="case-card" data-reveal>
-              <figure>
-                <img
-                  src="assets/case-03.svg"
-                  alt="AI writing assistant mobile app interface"
-                />
-              </figure>
-              <div class="card-body">
-                <p class="card-eyebrow">AI</p>
-                <h3>Trustworthy AI assistant for creatives</h3>
-                <p>
-                  Built ethical guardrails and content hierarchies that increased
-                  trial-to-paid conversions by 47% across global markets.
-                </p>
-                <ul class="chip-list">
-                  <li>UX research</li>
-                  <li>Content design</li>
-                  <li>Motion</li>
-                </ul>
-                <a class="text-link" href="#" data-intent="open-case-study"
-                  >View case study</a
-                >
-              </div>
-            </article>
+              <article class="project-card" data-reveal>
+                <a href="#" class="project-card__link" aria-label="Tech Bank Client — Technical Infographic case study">
+                  <figure class="project-card__media project-card__media--alt" aria-hidden="true"></figure>
+                  <div class="project-card__content">
+                    <p class="project-card__client">Tech Bank Client</p>
+                    <h3 class="project-card__title">Technical Infographic</h3>
+                  </div>
+                </a>
+              </article>
+
+              <article class="project-card" data-reveal>
+                <a href="#" class="project-card__link" aria-label="Notex — Extend & Support App Plugin case study">
+                  <figure class="project-card__media project-card__media--alt" aria-hidden="true"></figure>
+                  <div class="project-card__content">
+                    <p class="project-card__client">Notex</p>
+                    <h3 class="project-card__title">
+                      Extend &amp; Support — App Plugin
+                    </h3>
+                  </div>
+                </a>
+              </article>
+            </div>
           </div>
         </section>
 
-        <section class="approach" id="approach" data-component="approach">
+        <section class="services" id="services">
           <div class="container">
             <div class="section-heading" data-reveal>
-              <p class="eyebrow">Approach</p>
-              <h2>Ethical, inclusive, measurable</h2>
+              <p class="eyebrow">Services</p>
+              <h2>Capabilities for every stage</h2>
             </div>
-            <div class="approach-grid">
-              <article data-reveal>
-                <h3>Grounded in research</h3>
-                <p>
-                  Mixed-method insights inform every decision, ensuring products
-                  resonate with the people they serve.
-                </p>
+            <div class="services-grid">
+              <article class="service-card" data-reveal>
+                <h3>Branding</h3>
+                <ul>
+                  <li>Logo Design</li>
+                  <li>Brand Guidelines</li>
+                  <li>Collateral Design</li>
+                  <li>Rebranding Services</li>
+                </ul>
               </article>
-              <article data-reveal>
-                <h3>Systems thinking</h3>
-                <p>
-                  Holistic service blueprints align teams, cover edge cases, and
-                  derisk launches.
-                </p>
+              <article class="service-card" data-reveal>
+                <h3>UX/UI Designs</h3>
+                <ul>
+                  <li>User Research &amp; Analysis</li>
+                  <li>Wireframing &amp; Prototyping</li>
+                  <li>User Interface Design</li>
+                  <li>User Experience Testing</li>
+                </ul>
               </article>
-              <article data-reveal>
-                <h3>Measurable outcomes</h3>
-                <p>
-                  Experiments and analytics tie experience improvements to KPIs,
-                  proving ROI with clarity.
-                </p>
+              <article class="service-card" data-reveal>
+                <h3>Motion &amp; Animation</h3>
+                <ul>
+                  <li>Motion Graphics Design</li>
+                  <li>Animated Explainer Videos</li>
+                  <li>Interactive Presentations</li>
+                  <li>Product Microinteractions</li>
+                </ul>
               </article>
-              <article data-reveal>
-                <h3>Accessible by default</h3>
-                <p>
-                  Accessibility benchmarks are set early, with inclusive
-                  patterns systemized for scale.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="about" id="about" data-component="about">
-          <div class="container">
-            <div class="about-grid">
-              <figure data-reveal>
-                <img
-                  src="assets/about-portrait.svg"
-                  alt="Portrait of Pearl"
-                />
-              </figure>
-              <div class="about-copy" data-reveal>
-                <p class="eyebrow">About Pearl</p>
-                <h2>Design leader blending craft with strategy</h2>
-                <p>
-                  Pearl has spent nearly a decade shaping product and service
-                  ecosystems for mission-driven organizations. From early-stage
-                  definition to scaled execution, she bridges qualitative
-                  insights with data-led experimentation.
-                </p>
-                <p>
-                  Previously at <strong>Stripe</strong>, <strong>IDEO</strong>, and
-                  <strong>FutureLab</strong>. Alum of <strong>RISD</strong> and
-                  <strong>MIT Media Lab</strong>.
-                </p>
-                <a class="button secondary" href="#contact">Download résumé</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          class="logos"
-          aria-label="Logos of clients and collaborators"
-          data-component="logos"
-        >
-          <div class="container">
-            <ul>
-              <li data-reveal>Stripe</li>
-              <li data-reveal>IDEO</li>
-              <li data-reveal>FutureLab</li>
-              <li data-reveal>ClimateNow</li>
-              <li data-reveal>Atlas Health</li>
-              <li data-reveal>Commonwealth</li>
-            </ul>
-          </div>
-        </section>
-
-        <section
-          class="testimonials"
-          id="testimonials"
-          data-component="testimonials"
-        >
-          <div class="container">
-            <div class="section-heading" data-reveal>
-              <p class="eyebrow">Testimonials</p>
-              <h2>Trusted partner for product leaders</h2>
-            </div>
-            <div class="testimonial-grid">
-              <article data-reveal>
-                <blockquote>
-                  “Pearl elevated the accessibility of our core flows while
-                  unlocking a double-digit conversion lift. She’s the rare
-                  partner who merges craft with business rigor.”
-                </blockquote>
-                <p class="attribution">
-                  <span class="name">Lina Ortega</span>
-                  <span class="role">VP Product, Atlas Health</span>
-                </p>
-              </article>
-              <article data-reveal>
-                <blockquote>
-                  “Her facilitation skills aligned leadership and anchored us in
-                  user empathy. The service blueprint she delivered is still our
-                  north star.”
-                </blockquote>
-                <p class="attribution">
-                  <span class="name">Aaron Patel</span>
-                  <span class="role">Head of Service Design, Commonwealth</span>
-                </p>
-              </article>
-              <article data-reveal>
-                <blockquote>
-                  “Working with Pearl was transformative—her ability to turn
-                  complex problems into elegant systems is unmatched.”
-                </blockquote>
-                <p class="attribution">
-                  <span class="name">Jamie Lee</span>
-                  <span class="role">Chief Design Officer, FutureLab</span>
-                </p>
+              <article class="service-card" data-reveal>
+                <h3>Mobile</h3>
+                <ul>
+                  <li>iOS App Development</li>
+                  <li>Android App Development</li>
+                  <li>App Prototyping &amp; Testing</li>
+                  <li>App Maintenance &amp; Updates</li>
+                </ul>
               </article>
             </div>
           </div>
         </section>
 
-        <section class="press" data-component="press">
-          <div class="container">
-            <div class="section-heading" data-reveal>
-              <p class="eyebrow">Press & Talks</p>
-              <h2>Featured in leading publications</h2>
+        <section class="story" id="story">
+          <div class="container story__inner" data-reveal>
+            <div class="story__content">
+              <p class="eyebrow">Our Story</p>
+              <h2>Explore our journey</h2>
+              <p>
+                Learn what sets us apart in crafting impactful digital
+                experiences—with a focus on inclusive design, measurable
+                outcomes, and long-term partnership.
+              </p>
             </div>
-            <ul class="press-list">
-              <li data-reveal>
-                <a href="#">
-                  <span class="press-title">Design Matters Podcast</span>
-                  <span class="press-meta">Episode 214 · Designing for trust</span>
-                </a>
-              </li>
-              <li data-reveal>
-                <a href="#">
-                  <span class="press-title">Fast Company</span>
-                  <span class="press-meta">Why inclusive finance wins</span>
-                </a>
-              </li>
-              <li data-reveal>
-                <a href="#">
-                  <span class="press-title">Web Summit 2024</span>
-                  <span class="press-meta">Keynote on ethical AI systems</span>
-                </a>
-              </li>
-            </ul>
+            <a class="button button--secondary" href="#contact">About Us</a>
           </div>
         </section>
 
-        <section class="cta" id="contact" data-component="cta">
+        <section class="cta" id="contact">
           <div class="container">
-            <div class="cta-card" data-reveal>
-              <div class="cta-copy">
-                <p class="eyebrow">Let’s collaborate</p>
-                <h2>Ready to transform your product?</h2>
+            <div class="cta__card" data-reveal>
+              <div class="cta__content">
+                <p class="eyebrow">Let’s start creating together</p>
+                <h2>Ready to launch something remarkable?</h2>
                 <p>
-                  Share a few details about your project goals and timeline. I’ll
-                  respond within two business days.
+                  Share your vision and we’ll build the roadmap—aligned with the
+                  Pearl design system and tailored to your team.
                 </p>
               </div>
-              <form class="cta-form">
+              <form class="cta__form">
                 <label>
                   Name
                   <input type="text" name="name" placeholder="Your name" />
                 </label>
                 <label>
                   Email
-                  <input type="email" name="email" placeholder="you@email.com" />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@email.com"
+                  />
                 </label>
                 <label>
                   Project details
                   <textarea
                     name="message"
                     rows="4"
-                    placeholder="Tell me about your goals, timeline, and success metrics."
+                    placeholder="Tell us about your goals, timeline, and success metrics."
                   ></textarea>
                 </label>
-                <button type="submit" class="button primary">
-                  Submit inquiry
+                <button type="submit" class="button button--primary">
+                  Let’s talk
                 </button>
               </form>
             </div>
@@ -386,23 +288,39 @@
 
       <footer class="site-footer">
         <div class="container">
-          <div class="footer-brand">
-            <span class="logo-mark" aria-hidden="true"></span>
-            <span class="logo-text">Pearl</span>
+          <div class="footer__brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">Pearl</span>
           </div>
-          <div class="footer-middle">
+          <div class="footer__links">
             <p>
-              Crafting equitable products & services. Available for advisory,
-              embedded collaborations, and fractional leadership.
+              Minimalist portfolio template built on the Pearl design system.
+              <br />
+              Available to remix and tailor for your next launch.
             </p>
-            <ul class="footer-links">
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Dribbble</a></li>
-              <li><a href="#">Behance</a></li>
-              <li><a href="#">Email</a></li>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li>
+                <a href="https://twitter.com/DPietrasiak" target="_blank" rel="noopener"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a href="https://dribbble.com/dawidpietrasiak" target="_blank" rel="noopener"
+                  >Dribbble</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/dawid_pietrasiak/"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                >
+              </li>
             </ul>
           </div>
-          <div class="footer-meta">
+          <div class="footer__meta">
             <span>© <span data-year></span> Pearl Studio</span>
             <a href="#top" class="back-to-top" data-behavior="back-to-top"
               >Back to top</a
